@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+
 
 namespace HomePayroller
 {
@@ -37,7 +39,7 @@ namespace HomePayroller
 
         private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmRDepartamentos RDepartamentos = new FrmRDepartamentos();
+            FrmRPuestos RDepartamentos = new FrmRPuestos();
             RDepartamentos.Show();
         }
 
@@ -55,7 +57,7 @@ namespace HomePayroller
 
         private void buscarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            FrmRPuestos RPuestos = new FrmRPuestos();
+            FrmRDepartamentos RPuestos = new FrmRDepartamentos();
             RPuestos.Show();
         }
 

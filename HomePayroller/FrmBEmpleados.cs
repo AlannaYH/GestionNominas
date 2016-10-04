@@ -35,7 +35,7 @@ namespace HomePayroller
 
         private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmRDepartamentos RDepartamentos = new FrmRDepartamentos();
+            FrmRPuestos RDepartamentos = new FrmRPuestos();
             RDepartamentos.Show();
         }
 

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="conexion.cs" />
+    <Compile Include="DatosDataGrid.cs" />
     <Compile Include="FrmBDeducciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +90,11 @@
     <Compile Include="FrmRDeducciones.Designer.cs">
       <DependentUpon>FrmRDeducciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRDepartamentos.cs">
+    <Compile Include="FrmRPuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRDepartamentos.Designer.cs">
-      <DependentUpon>FrmRDepartamentos.cs</DependentUpon>
+    <Compile Include="FrmRPuestos.Designer.cs">
+      <DependentUpon>FrmRPuestos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmREmpleados.cs">
       <SubType>Form</SubType>
@@ -106,11 +108,11 @@
     <Compile Include="FrmRIngresos.Designer.cs">
       <DependentUpon>FrmRIngresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmRPuestos.cs">
+    <Compile Include="FrmRDepartamentos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmRPuestos.Designer.cs">
-      <DependentUpon>FrmRPuestos.cs</DependentUpon>
+    <Compile Include="FrmRDepartamentos.Designer.cs">
+      <DependentUpon>FrmRDepartamentos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRTransacciones.cs">
       <SubType>Form</SubType>
@@ -123,6 +125,11 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayrollerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollerDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,8 +154,8 @@
     <EmbeddedResource Include="FrmRDeducciones.resx">
       <DependentUpon>FrmRDeducciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRDepartamentos.resx">
-      <DependentUpon>FrmRDepartamentos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRPuestos.resx">
+      <DependentUpon>FrmRPuestos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmREmpleados.resx">
       <DependentUpon>FrmREmpleados.cs</DependentUpon>
@@ -156,8 +163,8 @@
     <EmbeddedResource Include="FrmRIngresos.resx">
       <DependentUpon>FrmRIngresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmRPuestos.resx">
-      <DependentUpon>FrmRPuestos.cs</DependentUpon>
+    <EmbeddedResource Include="FrmRDepartamentos.resx">
+      <DependentUpon>FrmRDepartamentos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRTransacciones.resx">
       <DependentUpon>FrmRTransacciones.cs</DependentUpon>
@@ -174,6 +181,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="PayrollerDataSet.xsc">
+      <DependentUpon>PayrollerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PayrollerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayrollerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PayrollerDataSet.xss">
+      <DependentUpon>PayrollerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

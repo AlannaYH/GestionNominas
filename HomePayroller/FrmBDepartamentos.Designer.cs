@@ -210,11 +210,13 @@
             this.cbxCriterio.Items.AddRange(new object[] {
             "ID",
             "Nombre",
-            "Responsable del Area"});
+            "Ubicación",
+            "Responsable del Área"});
             this.cbxCriterio.Location = new System.Drawing.Point(62, 25);
             this.cbxCriterio.Name = "cbxCriterio";
             this.cbxCriterio.Size = new System.Drawing.Size(199, 21);
             this.cbxCriterio.TabIndex = 3;
+            this.cbxCriterio.SelectedIndexChanged += new System.EventHandler(this.cbxCriterio_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -238,6 +240,7 @@
             // 
             this.dgvDepartamentos.AllowUserToAddRows = false;
             this.dgvDepartamentos.AllowUserToDeleteRows = false;
+            this.dgvDepartamentos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDepartamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDepartamentos.Location = new System.Drawing.Point(20, 33);
             this.dgvDepartamentos.Name = "dgvDepartamentos";
@@ -310,6 +313,7 @@
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnActualizar
             // 

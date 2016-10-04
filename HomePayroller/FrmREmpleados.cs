@@ -7,11 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace HomePayroller
 {
     public partial class FrmREmpleados : Form
     {
+        private SqlConnection oCon = null;
+        public string nombres = "";
+        public string Apellidos = "";
+        public string cedula = "";
+        public string direccion = "";
+        public string telefono = "";
+        public string nacionalidad = "";
+        public string telefonoe = "";
+
         public FrmREmpleados()
         {
             InitializeComponent();
@@ -30,8 +40,13 @@ namespace HomePayroller
 
         private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            FrmRDepartamentos RDepartamentos = new FrmRDepartamentos();
+            FrmRPuestos RDepartamentos = new FrmRPuestos();
             RDepartamentos.Show();
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
